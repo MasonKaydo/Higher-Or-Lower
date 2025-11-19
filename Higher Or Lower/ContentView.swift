@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var money = 1000
+    @State var guess = true
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView{
+            ZStack{
+                Image("background")
+                    .resizable()
+                    .frame(width: 500, height: 1000)
+                VStack{
+                    Text("Higher or Lower")
+                        .font(Font.largeTitle.bold())
+                        .padding()
+                    NavigationLink("Play", destination: SwiftUIView01())
+                    .font(Font.largeTitle.bold())
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 
