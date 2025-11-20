@@ -16,9 +16,10 @@ struct ContentView: View {
                 Image("background")
                     .resizable()
                     .frame(width: 500, height: 1000)
-                VStack{
+                VStack(){
                     Text("Higher or Lower")
                         .font(Font.largeTitle.bold())
+                        .foregroundColor(.white)
                         .padding()
                     NavigationLink("Play", destination: SwiftUIView01())
                     .font(Font.largeTitle.bold())
