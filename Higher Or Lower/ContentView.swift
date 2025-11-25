@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var money = 1000
     @State var guess = true
+    @State var bet = 1
     var body: some View {
         NavigationView{
             ZStack{
