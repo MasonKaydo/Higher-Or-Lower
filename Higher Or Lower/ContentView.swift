@@ -24,11 +24,12 @@ struct ContentView: View {
                         .padding()
                     NavigationLink("Play", destination: SwiftUIView01())
                     .font(Font.largeTitle.bold())
-                    
+                    NavigationLink("Rules", destination: Rules())
+                        .font(Font.largeTitle.bold())
                 }
             }
         }
-    }
+        }
 }
 
 #Preview {
